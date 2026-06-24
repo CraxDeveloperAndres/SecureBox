@@ -38,3 +38,16 @@ aqui podemos ver como una traza icmp desde la maquina atacante es identificada e
 <img width="844" height="207" alt="image" src="https://github.com/user-attachments/assets/3747af58-f0c9-44b6-a827-8f639b1086ee" />
 
 estas fueron las reglas pre establecidas en el local.rules de suricata para identificar trazas icmp que se le haga al servidor primero 
+
+luego procedemos a instalar wazuh como (SIEM) a traves de su dashboard con el que podremos gestionar algunas alertas cuando algun atacante, una vez instalado el servicio podemos darnos cuenta que en la red interna por el puerto que activamos en este caso el 8443 nos permite ver el wazuh de manera visual 
+
+<img width="1409" height="809" alt="image" src="https://github.com/user-attachments/assets/b419f11d-04e2-4ae4-a463-2534fd2ed3fc" />
+
+cabe resaltar que como el protocolo tcp por el puerto 443 no permimte la entrada por nuestro firewall es indispensable activar dicho privilegio en nuestro firewall con nftables una vez entramos cons las credenciales podemos ver las cosas activas 
+<img width="1333" height="798" alt="image" src="https://github.com/user-attachments/assets/cb316326-d0c6-4b6a-9ed0-b07b9f5cb44e" />
+
+ tengo aun unos pequeños errores con las alertas pero esta en proceso de arreglarlo mientras tanto podemos ver el panel y algunos settings que tendriamos 
+
+<img width="1410" height="804" alt="image" src="https://github.com/user-attachments/assets/59caafd6-bb5d-44ec-bd37-8e6755247e9e" />
+
+con todo esto solucionado pasariamos a el dashboard web una vez solucionemos los inconvenientes con las alertas del wazuh 
